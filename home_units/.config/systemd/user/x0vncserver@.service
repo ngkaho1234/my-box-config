@@ -3,8 +3,8 @@ Description=Remote desktop service (VNC)
 After=syslog.target network.target
 
 [Service]
-Type=forking
-ExecStart=/usr/bin/sh -c '/usr/bin/x0vncserver -display :0 -rfbport 5900 -passwordfile $HOME/.vnc/passwd &'
+Type=simple
+ExecStart=/usr/bin/sh -c '/usr/bin/x0vncserver -display :0 -rfbport %i -passwordfile $HOME/.vnc/passwd'
 
 [Install]
 WantedBy=multi-user.target
