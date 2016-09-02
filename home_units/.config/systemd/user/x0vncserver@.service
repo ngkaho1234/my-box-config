@@ -1,10 +1,11 @@
 [Unit]
 Description=Remote desktop service (VNC)
-After=syslog.target network.target
+After=syslog.target network.target graphical.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/sh -c '/usr/bin/x0vncserver -display :0 -rfbport %i -passwordfile $HOME/.vnc/passwd'
+#ExecStart=/usr/bin/sh -c '/usr/bin/x0vncserver -display :0 -rfbport %i -passwordfile %h/.vnc/passwd'
+ExecStart=/usr/bin/sh -c '/usr/bin/x0vncserver -display :0 -rfbport %i -passwordfile %h/.vnc/passwd -SecurityTypes VncAuth'
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
