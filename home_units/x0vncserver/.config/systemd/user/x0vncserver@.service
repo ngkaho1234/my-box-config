@@ -4,7 +4,7 @@ After=syslog.target network.target graphical.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/x0vncserver -rfbport %i -passwordfile %h/.vnc/passwd -SecurityTypes VncAuth,Plain,TLSVnc,TLSPlain,X509None,X509Vnc,X509Plain
+ExecStart=/usr/bin/x0vncserver -pamservice system-remote-login -PlainUsers %u -rfbport %i -SecurityTypes Plain,TLSPlain
 
 [Install]
 WantedBy=default.target
