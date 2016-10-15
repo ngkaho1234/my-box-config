@@ -1,0 +1,9 @@
+[Desktop Entry]
+MimeType=application/x-sharedlib;
+Name=Execute PIE
+Exec=%f
+Icon=application-x-executable
+Type=Application
+Terminal=false
+Categories=Utility;System;
+Comment=Execute position-independent executables (PIE)
