@@ -1,7 +1,8 @@
+#!/usr/bin/env xdg-open
 [Desktop Entry]
 MimeType=application/x-sharedlib;
 Name=Execute PIE
-Exec=%f
+Exec=find %f -exec '{}' ;
 Icon=application-x-executable
 Type=Application
 Terminal=false
