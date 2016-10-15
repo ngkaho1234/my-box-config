@@ -6,4 +6,4 @@ Icon=application-x-executable
 Type=Application
 Terminal=false
 Categories=Utility;System;
-Comment=Execute position-independent executables (PIE)
+Comment=Execute position-independent executable (PIE)
