@@ -1,0 +1,2 @@
+Defaults:admin		!authenticate
+admin	ALL=(ALL)	ALL
