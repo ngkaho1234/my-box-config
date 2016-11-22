@@ -1,0 +1,2 @@
+Defaults: %wheel	env_reset, timestamp_timeout=-1
+%wheel	ALL=(ALL)	ALL
